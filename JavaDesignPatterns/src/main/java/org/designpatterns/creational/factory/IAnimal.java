@@ -6,31 +6,31 @@
 package org.designpatterns.creational.factory;
 
 /**
- * Abstract class
+ * Interface
  * 
  * @author AGanesan
  *
  */
-public abstract class AbstractAnimal {
+public interface IAnimal {
 
 	/**
 	 * returns the food it eats
 	 * 
 	 * @return
 	 */
-	public abstract String eat();
+	public String eat();
 
 	/**
 	 * returns color of the animal
 	 * 
 	 * @return
 	 */
-	public abstract String color();
+	public String color();
 
 	/**
 	 * returns the name of the animal
 	 * 
 	 * @return
 	 */
-	public abstract String name();
+	public String name();
 }

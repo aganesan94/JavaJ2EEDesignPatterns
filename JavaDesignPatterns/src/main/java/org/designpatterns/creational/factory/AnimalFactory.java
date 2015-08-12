@@ -19,8 +19,8 @@ public class AnimalFactory {
 	 * @param animalType
 	 * @return
 	 */
-	public static AbstractAnimal newAnimal(AnimalType animalType) {
-		AbstractAnimal animal = null;
+	public static IAnimal newAnimal(AnimalType animalType) {
+		IAnimal animal = null;
 
 		if (animalType.equals(AnimalType.CARNIVORE)) {
 			logger.info("Returning an instance of a lion");

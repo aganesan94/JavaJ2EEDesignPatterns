@@ -1,6 +1,6 @@
 package org.test.designpatterns;
 
-import org.designpatterns.creational.factory.AbstractAnimal;
+import org.designpatterns.creational.factory.IAnimal;
 import org.designpatterns.creational.factory.AnimalFactory;
 import org.designpatterns.creational.factory.AnimalType;
 import org.junit.Test;
@@ -18,13 +18,13 @@ public class FactoryPatternTest {
 
 	@Test
 	public void factory() throws Exception {
-		AbstractAnimal carnivore = AnimalFactory.newAnimal(AnimalType.CARNIVORE);
+		IAnimal carnivore = AnimalFactory.newAnimal(AnimalType.CARNIVORE);
 		logger.info("A carnivore with color:{}, eats:{} is {}.", new Object[] { carnivore.color(), carnivore.eat() });
 
-		AbstractAnimal herbivore = AnimalFactory.newAnimal(AnimalType.HERBIVORE);
+		IAnimal herbivore = AnimalFactory.newAnimal(AnimalType.HERBIVORE);
 		logger.info("A herbivore with color:{}, eats:{} is {}.", new Object[] { herbivore.color(), herbivore.eat() });
 
-		AbstractAnimal mammal = AnimalFactory.newAnimal(AnimalType.MAMMAL);
+		IAnimal mammal = AnimalFactory.newAnimal(AnimalType.MAMMAL);
 		logger.info("A mammal with color:{}, eats:{} is {}.", new Object[] { mammal.color(), mammal.eat(), mammal.name() });
 
 	}

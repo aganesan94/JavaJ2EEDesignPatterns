@@ -5,19 +5,16 @@ package org.designpatterns.creational.factory;
  * File Name: Lion.java
  * Author: AGanesan
  */
-public class Lion extends AbstractAnimal {
+public class Lion implements IAnimal {
 
-	@Override
-	public  String eat() {
+	public String eat() {
 		return "buffaloes";
 	}
 
-	@Override
 	public String color() {
 		return "yellow";
 	}
 
-	@Override
 	public String name() {
 		return "Lion";
 	}

@@ -5,19 +5,16 @@ package org.designpatterns.creational.factory;
  * File Name: Elephant.java
  * Author: AGanesan
  */
-public class Elephant extends AbstractAnimal {
+public class Elephant implements IAnimal {
 
-	@Override
 	public String eat() {
 		return "bamboo";
 	}
 
-	@Override
 	public String color() {
 		return "grey";
 	}
 
-	@Override
 	public String name() {
 		return "Elephant";
 	}

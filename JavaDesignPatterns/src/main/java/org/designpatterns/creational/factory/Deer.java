@@ -5,19 +5,16 @@ package org.designpatterns.creational.factory;
  * File Name: Cat.java
  * Author: AGanesan
  */
-public class Deer extends AbstractAnimal {
-	
-	@Override
-	public  String eat() {
+public class Deer implements IAnimal {
+
+	public String eat() {
 		return "grass";
 	}
 
-	@Override
-	public  String color() {
+	public String color() {
 		return "golden";
 	}
 
-	@Override
 	public String name() {
 		return "Deer";
 	}
