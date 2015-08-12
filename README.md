@@ -1,2 +1,2 @@
-# JavaJ2EEDesignPatterns
-JavaDesignPatterns
+# JavaDesignPatterns
+JavaDesignPatterns explains all the patterns in the Java and J2EE world. 
