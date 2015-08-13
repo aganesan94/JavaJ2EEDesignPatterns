@@ -1,6 +1,5 @@
 package org.test.designpatterns.creational;
 
-import org.designpatterns.creational.prototype.Cars;
 import org.designpatterns.creational.prototype.Honda;
 import org.junit.Test;
 import org.slf4j.Logger;
