@@ -32,4 +32,17 @@ public class Person {
 		return dob;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Person [name=");
+		builder.append(name);
+		builder.append(", age=");
+		builder.append(age);
+		builder.append(", dob=");
+		builder.append(dob);
+		builder.append("]");
+		return builder.toString();
+	}
+
 }

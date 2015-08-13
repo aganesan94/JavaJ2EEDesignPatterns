@@ -20,8 +20,9 @@ public class BuilderTest {
 
 	@Test
 	public void build() {
-		 org.designpatterns.creational.builder.Person person = new org.designpatterns.creational.builder.Person.PersonBuilder("BobFoo").setAge(23).build();
-		 logger.info("Person : {}" , person);
+		org.designpatterns.creational.builder.Person person = new org.designpatterns.creational.builder.Person.PersonBuilder(
+				"BobFoo").setAge(23).build();
+		logger.info("Person : {}", person);
 	}
 
 	@Test
@@ -31,6 +32,9 @@ public class BuilderTest {
 		Person person3 = new Person("Bob3", 26, getDOB3());
 
 		// now what if this constructor kept changing
+		logger.info("Person1: {}", person1);
+		logger.info("Person2: {}", person2);
+		logger.info("Person3: {}", person3);
 
 	}
 
