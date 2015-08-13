@@ -1,4 +1,4 @@
-package org.test.designpatterns;
+package org.test.designpatterns.creational;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

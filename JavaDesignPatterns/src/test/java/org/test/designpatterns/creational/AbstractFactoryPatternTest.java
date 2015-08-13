@@ -1,4 +1,4 @@
-package org.test.designpatterns;
+package org.test.designpatterns.creational;
 
 import org.designpatterns.creational.abstractfactory.AbstractFoodFactory;
 import org.designpatterns.creational.abstractfactory.FoodProducer;
