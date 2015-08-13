@@ -8,8 +8,9 @@ package org.designpatterns.creational.prototype;
 public class Honda extends Cars implements Cloneable {
 
 	@Override
-	protected Object clone() throws CloneNotSupportedException {
+	public Object clone() throws CloneNotSupportedException {
 		Honda honda = new Honda();
+		honda.setModel(getModel());
 		honda.setColor("white");
 		honda.setYear("2010");
 		return honda;

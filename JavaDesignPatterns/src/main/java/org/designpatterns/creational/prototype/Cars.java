@@ -39,4 +39,19 @@ public class Cars {
 		this.year = year;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Cars [model=");
+		builder.append(model);
+		builder.append(", color=");
+		builder.append(color);
+		builder.append(", year=");
+		builder.append(year);
+		builder.append(", hashCode()=");
+		builder.append(hashCode());
+		builder.append("]");
+		return builder.toString();
+	}
+
 }
